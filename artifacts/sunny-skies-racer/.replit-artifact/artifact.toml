@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Sunny Skies Racer"
+description = "A bright, friendly 3D browser racing game for kids. Steer with simple keyboard or touch controls, collect stars, dodge playful obstacles, and advance through increasingly challenging levels."
+version = "1.0.0"
+id = "artifacts/sunny-skies-racer"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25404
+
+[services.development]
+run = "pnpm --filter @workspace/sunny-skies-racer run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sunny-skies-racer", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sunny-skies-racer/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25404"
+BASE_PATH = "/"

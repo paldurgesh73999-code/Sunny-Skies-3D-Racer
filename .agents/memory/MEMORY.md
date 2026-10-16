@@ -1,0 +1,1 @@
+- [WebGL preview fallback](webgl-preview-fallback.md) — The preview browser lacks WebGL; keep the Three.js SVG renderer path working alongside WebGL.

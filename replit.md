@@ -1,9 +1,10 @@
-# [Project name]
+# Sunny Skies Racer
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A bright 3D browser racing game for kids, with simple steering and levels that get harder as players progress.
 
 ## Run & Operate
 
+- `pnpm --filter @workspace/sunny-skies-racer run dev` — run the game
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
@@ -30,7 +31,7 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Sunny Skies Racer is a client-side 3D lane-racing game. Players steer between three lanes, collect stars, dodge friendly obstacles, and advance through progressively faster and busier levels. Keyboard and touch controls are supported.
 
 ## User preferences
 
